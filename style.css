@@ -45,11 +45,11 @@ li
   font-size: 16px;
 }
 
-li a{ color:white;
+.right-side li a{ color:white;
     text-decoration:none
 
 }
-a:hover,a:active {
+.right-side a:hover,a:active {
     color:black;
     background-color: white;
     text-decoration: underline;
@@ -87,5 +87,19 @@ a:hover,a:active {
     left: 10px;
     top: -30px;
     position: relative;
+    
 }
 
+.pin{
+    display: inline-block;
+}
+
+.Pin-area img{ width: 10px;}
+
+.edit-profile {display: flex;
+    align-items: center;
+padding: 10px;}
+
+.edit-profile img {width: 12px;
+    height: 12px;
+}
