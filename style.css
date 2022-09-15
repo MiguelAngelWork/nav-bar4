@@ -1,25 +1,37 @@
 *{
     font-family: 'Roboto', cursive;
-border: 1px solid red;
+ /* border: 1px solid red; */ */
 padding: 0;
 margin: 0;
+}
+
+.row{ display: flex}
+.column{
+    flex: 1;
+    margin:10px
+}
+.column2{
+    flex: .75;
+    margin:10px;
 }
 
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #333333;
+    justify-content: flex-start;
+    background-color: rgb(43, 41, 41);
     height: 80px;
-    width: 1000px;
-    padding: 1%;
+    max-width: 900px;
+    padding: 0 150px;
     color: white;
-    box-shadow: 5px 5px black;
+    
 
 }
 
 .left-side{
 font-style: bold; 
+display: flex;
+    align-items: center;
 
 }
 
@@ -30,11 +42,12 @@ font-style: bold;
 
 .nav-links
 {
-   
+   display: flex;
    text-decoration: none;
    color: white;
    list-style-type: none;
-   justify-content: space around;
+   justify-content: space-evenly;
+   padding: 0 20px
 }
 
 li
@@ -45,11 +58,11 @@ li
   font-size: 16px;
 }
 
-.right-side li a{ color:white;
+.nav-links li a{ color:white;
     text-decoration:none
 
 }
-.right-side a:hover,a:active {
+.nav-links a:hover,a:active {
     color:black;
     background-color: white;
     text-decoration: underline;
@@ -58,7 +71,7 @@ li
 }
 
 .btn{
-    background-color: teal;
+    background-color: #17a2b8;
     color: white;
     padding: 5px 10px;
     border-radius: 8px;
@@ -66,14 +79,16 @@ li
     }
 
 .card{
+   
+    /* margin: 20px 0; */
+    height:280px;
+    /* width: 400px; */
+    margin-left: 150px;
     border: 1px solid gray; 
-    margin: 20px 0;
-    height:220px;
-    width: 480px;
 }
 .top-of-card{
     height: 25%;
-    background-color: rgb(58, 158, 158);
+    background-color: #17a2b8;
 }
 
 .icon{
@@ -96,10 +111,63 @@ li
 
 .Pin-area img{ width: 10px;}
 
-.edit-profile {display: flex;
+.edit-profile {
+    display: flex;
+    justify-content:flex-start;
     align-items: center;
-padding: 10px;}
+    padding: 10px;
+    color:#17a2b8}
 
 .edit-profile img {width: 12px;
     height: 12px;
+    padding: 10px;
+   
 }
+.requests{
+ height: 150px;
+ /* width: 300px; */
+ /* margin: 20px 20px 0px 0px; */
+}
+
+.connections{
+    /* height: 230px; */
+    /* width: 300px; */
+     margin: 20px 20px 0px 0px;   
+}
+
+.education{
+    /* margin: 20px 0; */
+    height:280px;
+    /* width: 400px; */
+    margin: 20px 20px 0px 150px;
+
+    border: 1px solid gray; 
+}
+
+.top-of-card2{
+    background-color: rgb(43, 42, 42);
+    font-size: large;
+    color:white;
+    padding: 12px;
+
+}
+
+.bottom-of-card2{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-of-card2 p{
+    
+}
+.icon2{
+  width: 30px;  
+  padding: 5px;
+}
+
+
+.cards{
+    border: 4px solid gray; 
+}
+
